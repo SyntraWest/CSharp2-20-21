@@ -25,4 +25,12 @@ namespace Rosetta
             Console.WriteLine(string.Join('\t', talen));
         }
     }
+
+    class Program2
+    {
+        static void Main(string[] args)
+        {
+
+        }
+    }
 }
