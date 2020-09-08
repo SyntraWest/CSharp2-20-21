@@ -6,4 +6,8 @@
     <StartupObject>Rosetta.Program</StartupObject>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RosettaTabelLibrary\RosettaTabelLibrary.csproj" />
+  </ItemGroup>
+
 </Project>

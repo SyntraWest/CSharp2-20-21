@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rosetta", "Rosetta\Rosetta.csproj", "{FEC8B3D4-A261-42BF-BC96-6A1BD0DFE173}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RosettaTabelLibrary", "RosettaTabelLibrary\RosettaTabelLibrary.csproj", "{4DED7743-447C-4084-8210-5AC0470012F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RosettaTabelLibrary", "RosettaTabelLibrary\RosettaTabelLibrary.csproj", "{4DED7743-447C-4084-8210-5AC0470012F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
