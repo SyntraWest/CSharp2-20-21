@@ -100,6 +100,32 @@ namespace VoorbeeldLezenSchrijvenBestanden
             }
 
         }
+        private void LeesVanConsoleEnSchrijfNaarBestandMetUsing2(string bestandsnaam)
+        {
+            try
+            {
+                using (TextWriter writer = new StreamWriter(bestandsnaam))
+                {
+
+                    string lijn = Console.ReadLine();
+                    while (!string.IsNullOrEmpty(lijn))
+                    {
+                        // schrijf lijn naar bestand.
+                        writer.WriteLine(lijn);
+                        lijn = Console.ReadLine();
+                    }
+                }
+            }
+            catch (IOException e)
+            {
+
+            }
+            catch (Exception e)
+            {
+
+            }
+
+        }
 
 
         private void SchrijfBestand(string bestandsnaam)
