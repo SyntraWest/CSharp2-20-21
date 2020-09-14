@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Text;
 
 namespace VoorbeeldLezenSchrijvenBestanden
 {
@@ -186,6 +187,26 @@ namespace VoorbeeldLezenSchrijvenBestanden
             }
         }
 
+        string LeesLijnInBestand(string bestandsnaam, int lijnnr)
+        {
+            try
+            {
+                using (TextReader reader = new StreamReader(bestandsnaam))
+                {
+                    // Je kan ook expliciet de FileStream aanmaken.
 
+                    string lijn = null;
+                    for (int i = 0; i < lijnnr; i++)
+                    {
+                        lijn = reader.ReadLine();
+                    }
+                    return lijn;
+                }
+            }
+            catch
+            {
+                return "";
+            }
+        }
     }
 }
