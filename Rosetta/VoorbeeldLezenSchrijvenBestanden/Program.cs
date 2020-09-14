@@ -32,7 +32,16 @@ namespace VoorbeeldLezenSchrijvenBestanden
             // Lees telkens een lijn van console en schrijf die naar
             // een bestand
             //prog.LeesVanConsoleEnSchrijfNaarBestand("beta.txt");
-            prog.LeesVanConsoleEnSchrijfNaarBestandMetUsing("beta.txt");
+            //prog.LeesVanConsoleEnSchrijfNaarBestandMetUsing("beta.txt");
+
+            prog.LeesVanConsoleEnSchrijfNaar(Console.Out);
+            // Probeer hetzelfde met schrijven naar een StreamWriter
+
+            // Voorbeeld argumenten meegeven via de command line
+            foreach(string arg in args)
+            {
+                Console.WriteLine(arg);
+            }
         }
 
         private void LeesVanConsoleEnSchrijfNaarBestand(string bestandsnaam)
@@ -100,6 +109,22 @@ namespace VoorbeeldLezenSchrijvenBestanden
             }
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="writer">Een TextWriter om naar te schrijven</param>
+        private void LeesVanConsoleEnSchrijfNaar(TextWriter writer)
+        {
+            string lijn = Console.ReadLine();
+            while (!string.IsNullOrEmpty(lijn))
+            {
+                // schrijf lijn naar bestand.
+                writer.WriteLine(lijn);
+                lijn = Console.ReadLine();
+            }
+        }
+
         private void LeesVanConsoleEnSchrijfNaarBestandMetUsing2(string bestandsnaam)
         {
             try
