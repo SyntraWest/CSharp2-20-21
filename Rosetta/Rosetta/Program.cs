@@ -32,7 +32,6 @@ namespace Rosetta
     {
         static void Main(string[] args)
         {
-
         }
     }
 }

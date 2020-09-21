@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RosettaTabelLibrary", "Rose
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoorbeeldProcessEnFilesystem", "VoorbeeldProcessEnFilesystem\VoorbeeldProcessEnFilesystem.csproj", "{34089AB3-5853-41B2-A87F-707B82831B11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoorbeeldLezenSchrijvenBestanden", "VoorbeeldLezenSchrijvenBestanden\VoorbeeldLezenSchrijvenBestanden.csproj", "{3E85271D-0C76-489F-9D8F-C621E72735AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoorbeeldLezenSchrijvenBestanden", "VoorbeeldLezenSchrijvenBestanden\VoorbeeldLezenSchrijvenBestanden.csproj", "{3E85271D-0C76-489F-9D8F-C621E72735AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoorbeeldHtmlParsen", "VoorbeeldHtmlParsen\VoorbeeldHtmlParsen.csproj", "{5A725F5D-3612-443A-A714-F6E7590021D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3E85271D-0C76-489F-9D8F-C621E72735AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E85271D-0C76-489F-9D8F-C621E72735AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E85271D-0C76-489F-9D8F-C621E72735AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A725F5D-3612-443A-A714-F6E7590021D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A725F5D-3612-443A-A714-F6E7590021D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A725F5D-3612-443A-A714-F6E7590021D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A725F5D-3612-443A-A714-F6E7590021D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
