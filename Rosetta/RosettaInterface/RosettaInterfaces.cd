@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Interface Name="RosettaInterface.IRosettaTextOutput">
+    <Position X="9.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RosettaInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RosettaInterface.IRosettaTabel">
+    <Position X="7" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAACAAAAAAAAAAAAAQAAAAAAAAgAAQ=</HashCode>
+      <FileName>RosettaInterfaces.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Talen" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Interface Name="RosettaInterface.ITaal">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAEAAAAAAAAECAAAABAA=</HashCode>
+      <FileName>RosettaInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RosettaInterface.ITermCombinatie">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>RosettaInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
