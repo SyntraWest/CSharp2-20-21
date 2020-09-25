@@ -8,4 +8,8 @@
     <DocumentationFile>C:\Users\pvoos\source\repos\SyntraWest\CSharp2-20-21\Rosetta\RosettaTabelLibrary\RosettaTabelLibrary.xml</DocumentationFile>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RosettaInterface\RosettaInterface.csproj" />
+  </ItemGroup>
+
 </Project>
