@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RosettaInterface.IO
 {
-    interface IRosettaDbInput
+    public interface IRosettaDb
     {
         void SetConnectionString(string connectionString);
         string TabelNaam { get; set; }

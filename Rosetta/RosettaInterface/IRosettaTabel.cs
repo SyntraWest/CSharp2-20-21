@@ -9,10 +9,11 @@ namespace Rosetta.Interface
     public interface IRosettaTabel : IEnumerable<ITermCombinatie>
     {
         /// <summary>
-        /// De indexer geeft een
+        /// De indexer geeft de <see cref="ITermCombinatie"/> op de gegeven positie
         /// </summary>
-        /// <param name="index"></param>
+        /// <param name="index">Positie van de gevraagde termcombinatie</param>
         /// <returns></returns>
+        /// <exception cref="IndexOutOfRangeException"/>
         ITermCombinatie this[int index] { get; }
 
         /// <summary>
