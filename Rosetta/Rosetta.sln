@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoorbeeldLezenSchrijvenBest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoorbeeldHtmlParsen", "VoorbeeldHtmlParsen\VoorbeeldHtmlParsen.csproj", "{5A725F5D-3612-443A-A714-F6E7590021D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RosettaInterface", "RosettaInterface\RosettaInterface.csproj", "{16672070-09AF-49B0-9BA1-71F97EF45D0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RosettaInterface", "RosettaInterface\RosettaInterface.csproj", "{16672070-09AF-49B0-9BA1-71F97EF45D0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Losse voorbeelden", "Losse voorbeelden", "{BDE93FF1-12B8-4F08-A00C-F57068CF1E02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +50,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FEC8B3D4-A261-42BF-BC96-6A1BD0DFE173} = {BDE93FF1-12B8-4F08-A00C-F57068CF1E02}
+		{4DED7743-447C-4084-8210-5AC0470012F7} = {BDE93FF1-12B8-4F08-A00C-F57068CF1E02}
+		{34089AB3-5853-41B2-A87F-707B82831B11} = {BDE93FF1-12B8-4F08-A00C-F57068CF1E02}
+		{3E85271D-0C76-489F-9D8F-C621E72735AD} = {BDE93FF1-12B8-4F08-A00C-F57068CF1E02}
+		{5A725F5D-3612-443A-A714-F6E7590021D7} = {BDE93FF1-12B8-4F08-A00C-F57068CF1E02}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F0635CB-DF99-4FC2-8DF2-CD714D1893B6}
