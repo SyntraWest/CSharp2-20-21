@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RosettaInterface", "Rosetta
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Losse voorbeelden", "Losse voorbeelden", "{BDE93FF1-12B8-4F08-A00C-F57068CF1E02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rosetta.Impl", "Rosetta.Impl\Rosetta.Impl.csproj", "{AD6FA922-68C8-419B-B090-BE3327724410}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rosetta.IO", "Rosetta.IO\Rosetta.IO.csproj", "{AD477534-EB75-4575-B1E7-B1F69C3E7BE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,14 @@ Global
 		{16672070-09AF-49B0-9BA1-71F97EF45D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16672070-09AF-49B0-9BA1-71F97EF45D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16672070-09AF-49B0-9BA1-71F97EF45D0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD6FA922-68C8-419B-B090-BE3327724410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD6FA922-68C8-419B-B090-BE3327724410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD6FA922-68C8-419B-B090-BE3327724410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD6FA922-68C8-419B-B090-BE3327724410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD477534-EB75-4575-B1E7-B1F69C3E7BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD477534-EB75-4575-B1E7-B1F69C3E7BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD477534-EB75-4575-B1E7-B1F69C3E7BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD477534-EB75-4575-B1E7-B1F69C3E7BE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
