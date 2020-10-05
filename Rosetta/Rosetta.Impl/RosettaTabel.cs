@@ -8,14 +8,29 @@ namespace Rosetta.Impl
     public class RosettaTabel : IRosettaTabel
     {
 
-        private readonly List<ITaal> talen;
+        private readonly List<RosettaTaal> talen;
         private readonly List<ITermCombinatie> termcombinaties;
 
         public RosettaTabel()
         {
-            talen = new List<ITaal>();
+            talen = new List<RosettaTaal>();
             termcombinaties = new List<ITermCombinatie>();
         }
+
+        #region niet in interface
+
+        public void VoegTermenToe(string[] termen)
+        {
+            if(termen.Length != talen.Count)
+                throw new ArgumentException("Er zijn niet even veel termen als talen");
+
+            for (int i = 0; i < talen.Count; i++)
+            {
+                talen[i].VoegTermToe(termen[i]);
+            }
+        }
+
+        #endregion niet in interface
 
         public ITermCombinatie this[int index] => termcombinaties[index];
 

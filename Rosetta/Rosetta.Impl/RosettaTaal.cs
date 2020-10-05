@@ -9,7 +9,7 @@ namespace Rosetta.Impl
     internal class RosettaTaal : ITaal
     {
 
-        private readonly List<ITerm> termen;
+        internal readonly List<ITerm> termen;
 
         public RosettaTaal(string taal, int index)
         {
@@ -42,6 +42,11 @@ namespace Rosetta.Impl
             // Voorbeeldje voor een beetje later:
             // met Linq kan je dit veel korter noteren
             // return termen.Max(t => t.Term.Length);
+        }
+
+        internal void VoegTermToe(string term, )
+        {
+            termen.Add(new RosettaTerm(this, term));
         }
 
         public int MinimumTermLengte()
