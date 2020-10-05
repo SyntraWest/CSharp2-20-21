@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoorbeeldLezenSchrijvenBest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoorbeeldHtmlParsen", "VoorbeeldHtmlParsen\VoorbeeldHtmlParsen.csproj", "{5A725F5D-3612-443A-A714-F6E7590021D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RosettaInterface", "RosettaInterface\RosettaInterface.csproj", "{16672070-09AF-49B0-9BA1-71F97EF45D0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RosettaInterface", "RosettaInterface\RosettaInterface.csproj", "{16672070-09AF-49B0-9BA1-71F97EF45D0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rosetta.Impl", "Rosetta.Impl\Rosetta.Impl.csproj", "{0AEADB1E-4577-4FB3-ABB0-32936DCEAF97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{16672070-09AF-49B0-9BA1-71F97EF45D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16672070-09AF-49B0-9BA1-71F97EF45D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16672070-09AF-49B0-9BA1-71F97EF45D0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AEADB1E-4577-4FB3-ABB0-32936DCEAF97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AEADB1E-4577-4FB3-ABB0-32936DCEAF97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AEADB1E-4577-4FB3-ABB0-32936DCEAF97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AEADB1E-4577-4FB3-ABB0-32936DCEAF97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
