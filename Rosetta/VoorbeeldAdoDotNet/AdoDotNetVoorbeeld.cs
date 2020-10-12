@@ -53,9 +53,9 @@ CREATE TABLE [dbo].[Album2] (
         internal void Albumdata()
         {
             using(DbConnection connection = CreateConnection())
-                using (DbCommand command = connection.CreateCommand())
+            using (DbCommand command = connection.CreateCommand())
             {
-                command.CommandText = @"SELECT Title, AlbumId, ArtistId from Album";
+                command.CommandText = @"SELECT * from Album";
                 using (DbDataReader reader = command.ExecuteReader())
                 {
                     int colAlbumId = reader.GetOrdinal("AlbumId");
