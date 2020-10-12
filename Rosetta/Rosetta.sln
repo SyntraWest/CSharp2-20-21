@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoorbeeldLezenSchrijvenBest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoorbeeldHtmlParsen", "VoorbeeldHtmlParsen\VoorbeeldHtmlParsen.csproj", "{5A725F5D-3612-443A-A714-F6E7590021D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoorbeeldIndexers", "VoorbeeldIndexers\VoorbeeldIndexers.csproj", "{D275DD68-6CFE-4C70-9348-17709A04FE12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoorbeeldAdoDotNet", "VoorbeeldAdoDotNet\VoorbeeldAdoDotNet.csproj", "{7F779F48-A87B-46EF-8268-384421F97C31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{5A725F5D-3612-443A-A714-F6E7590021D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A725F5D-3612-443A-A714-F6E7590021D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A725F5D-3612-443A-A714-F6E7590021D7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D275DD68-6CFE-4C70-9348-17709A04FE12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D275DD68-6CFE-4C70-9348-17709A04FE12}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D275DD68-6CFE-4C70-9348-17709A04FE12}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D275DD68-6CFE-4C70-9348-17709A04FE12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F779F48-A87B-46EF-8268-384421F97C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F779F48-A87B-46EF-8268-384421F97C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F779F48-A87B-46EF-8268-384421F97C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F779F48-A87B-46EF-8268-384421F97C31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
