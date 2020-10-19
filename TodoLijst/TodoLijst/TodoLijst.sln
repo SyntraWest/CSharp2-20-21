@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoLijstConsoleApp", "Todo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoItemExtensions", "TodoItemExtensions\TodoItemExtensions.csproj", "{586D4B71-0CBF-4CD5-9BBF-235C92CA038F}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TodoDatabase", "TodoDatabase\TodoDatabase.sqlproj", "{5D30B495-89ED-48DE-BAFF-BA2FC320FDD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,12 @@ Global
 		{586D4B71-0CBF-4CD5-9BBF-235C92CA038F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{586D4B71-0CBF-4CD5-9BBF-235C92CA038F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{586D4B71-0CBF-4CD5-9BBF-235C92CA038F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D30B495-89ED-48DE-BAFF-BA2FC320FDD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D30B495-89ED-48DE-BAFF-BA2FC320FDD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D30B495-89ED-48DE-BAFF-BA2FC320FDD1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5D30B495-89ED-48DE-BAFF-BA2FC320FDD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D30B495-89ED-48DE-BAFF-BA2FC320FDD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D30B495-89ED-48DE-BAFF-BA2FC320FDD1}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
