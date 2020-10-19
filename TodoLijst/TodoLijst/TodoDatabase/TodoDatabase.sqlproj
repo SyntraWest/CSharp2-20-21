@@ -66,5 +66,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="TodoDatabase.publish.xml" />
+    <None Include="TodoDatabase_1.publish.xml" />
   </ItemGroup>
 </Project>
