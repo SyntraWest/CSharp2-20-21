@@ -20,8 +20,21 @@ namespace TodoLijstConsoleApp
             todoItem.WerkNuAf();
 
             var tijdAfgewerkt = todoItem.HoeLangAfgewerkt();
+            tijdAfgewerkt = Extensions.HoeLangAfgewerkt(todoItem);
 
             Console.WriteLine(tijdAfgewerkt);
+
+            //-----------------------------
+
+            todoItem = null;
+
+            // methode oproepen voor null:
+            // todoItem.WerkNuAf(); // NullReferenceException
+
+            // extension method oproepen voor null:
+            tijdAfgewerkt = todoItem.HoeLangAfgewerkt(); // OK
+
+
         }
     }
 }

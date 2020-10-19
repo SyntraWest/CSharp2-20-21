@@ -14,11 +14,11 @@ namespace TodoItemExtensions
         public static TimeSpan? HoeLangAfgewerkt(this TodoItem todoItem)
         {
             // voorbeeld TimeSpan
-            DateTime a = DateTime.Now;
-            DateTime b = DateTime.UtcNow;
-            TimeSpan utcVerschil = a - b;
+            //DateTime a = DateTime.Now;
+            //DateTime b = DateTime.UtcNow;
+            //TimeSpan utcVerschil = a - b;
 
-            return DateTime.Now - todoItem.WanneerKlaar;
+            return DateTime.Now - todoItem?.WanneerKlaar;
         }
     }
 }
