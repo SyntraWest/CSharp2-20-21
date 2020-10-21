@@ -2,6 +2,8 @@
 using System.Data.Common;
 using TodoLijstLibrary;
 using Dapper;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace TodoDataToegang
 {
@@ -31,17 +33,25 @@ namespace TodoDataToegang
 	                ,Naam
 	                )
                 VALUES (
-	                @eigenaar
-	                ,@naam
+	                @Eigenaar
+	                ,@Naam
 	                )
             ";
 
-            connection.Execute(sql, new
-            {
-                eigenaar = todoLijst.Eigenaar,
-                naam = todoLijst.Naam
-            });
+            connection.Execute(sql, todoLijst);
         }
 
+        public IEnumerable<TodoLijst> GeefTodoLijsten(string gebruiker)
+        {
+            string sql = @"
+                SELECT LijstId
+	                ,Naam
+	                ,Eigenaar
+                FROM TodoLijsten
+                WHERE Eigenaar = @Eigenaar
+                ";
+            var reader = connection.Query<TodoLijst>(sql, new { Eigenaar = gebruiker });
+            return reader.ToList();
+        }
     }
 }
