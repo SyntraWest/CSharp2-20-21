@@ -1,0 +1,15 @@
+/*
+102-stijl.css, stylesheet voor 102.....html
+*/
+h3 {
+    font-family: sans-serif;
+    color: chocolate;
+}
+
+#voorbeeldId {
+    font-size: larger;
+}
+
+.css-klasse {
+    font-weight: bold;
+}
