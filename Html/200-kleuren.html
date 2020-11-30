@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            float: left;
+            width: 100pt;
+            border: dotted;
+            margin: 5pt;
+            padding: 20pt;
+            font-weight: bold;
+            color: purple;
+        }
+
+        #rood {
+            background-color: red;
+        }
+
+        #geel {
+            background-color: yellow;
+        }
+
+        #groen {
+            background-color: green;
+        }
+
+        #blauw {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id=rood>
+        Rood
+    </div>
+    <div id=geel>
+        Geel
+    </div>
+    <div id=groen>
+        Groen
+    </div>
+    <div id=blauw>
+        Blauw
+    </div>
+
+<script>
+    geel.onclick = function () {
+        let tmp = rood.style.backgroundColor
+        rood.style.backgroundColor = geel.style.backgroundColor
+        geel.style.backgroundColor = tmp
+    }
+</script>
+
+</body>
+
+</html>

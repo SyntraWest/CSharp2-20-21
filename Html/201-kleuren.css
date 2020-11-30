@@ -1,0 +1,25 @@
+div {
+  float: left;
+  width: 100pt;
+  border: dotted;
+  margin: 5pt;
+  padding: 20pt;
+  font-weight: bold;
+  color: purple;
+}
+
+#rood {
+  /* background-color: red; */
+}
+
+#geel {
+  /* background-color: yellow; */
+}
+
+#groen {
+  /* background-color: green; */
+}
+
+#blauw {
+  /* background-color: blue; */
+}
