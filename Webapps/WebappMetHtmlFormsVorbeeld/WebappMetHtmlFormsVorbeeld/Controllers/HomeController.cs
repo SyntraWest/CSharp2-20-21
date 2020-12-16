@@ -20,7 +20,43 @@ namespace WebappMetHtmlFormsVorbeeld.Controllers
 
         public IActionResult Index()
         {
+            // met GET
             string email = Request.Query["email"];
+
+            // met POST
+            if (email == null)
+                try
+                {
+                    email = Request.Form["email"];
+                }
+                catch (Exception)
+                {
+
+                }
+
+            return View();
+        }
+
+        public IActionResult NietThuis()
+        {
+
+            // met GET
+            string kleur = Request.Query["kleur"];
+
+            // met POST
+            if (kleur == null)
+            {
+                try
+                {
+                    kleur = Request.Form["kleur"];
+                }
+                catch (Exception)
+                {
+
+                }
+            }
+
+            ViewBag.Kleur = kleur;
             return View();
         }
 

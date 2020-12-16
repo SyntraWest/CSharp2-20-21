@@ -1,13 +1,14 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Niet thuis";
 }
 
 
-<h1>Formulier met GET</h1>
+<h1>Niet thuis met GET</h1>
+
+<h2 style="color:@ViewBag.Kleur;">Kleur: @ViewBag.Kleur</h2>
 
 <div class="formulier">
-    <form action="/Home/NietThuis" method="get">
-
+    <form action="/Home" method="get">
         <div>
             E-mailadres
             <input type=email value="alpha@beta.gamma" name=email>
@@ -49,10 +50,10 @@
     </form>
 </div>
 
-<h1>Formulier met POST</h1>
+<h1>Niet thuis met POST</h1>
 
 <div class="formulier">
-    <form action="/Home/NietThuis" method="post">
+    <form action="/Home" method="post">
 
         <div>
             E-mailadres
