@@ -20,21 +20,7 @@ namespace WebappMetHtmlFormsVorbeeld.Controllers
 
         public IActionResult Index()
         {
-            // met GET
-            string email = Request.Query["email"];
-
-            // met POST
-            if (email == null)
-                try
-                {
-                    email = Request.Form["email"];
-                }
-                catch (Exception)
-                {
-
-                }
-
-            return View();
+            return RedirectToAction("NietThuis");
         }
 
         public IActionResult NietThuis()
@@ -58,6 +44,19 @@ namespace WebappMetHtmlFormsVorbeeld.Controllers
 
             ViewBag.Kleur = kleur;
             return View();
+        }
+
+        public IActionResult Resultaat()
+        {
+            string methode = Request.Query["methode"];
+            switch (methode)
+            {
+                case "badrequest":
+                    return BadRequest();
+                default:
+                    return RedirectToAction("Index");
+            }
+
         }
 
         public IActionResult Privacy()
