@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="formulier">
+    <form action="/Home" method="get">
+
+        <div>
+            E-mailadres
+            <input type=email value="alpha@beta.gamma" name=email>
+        </div>
+        <div>
+            Tekst
+            <input type=text name=tekst>
+        </div>
+        <div>
+            Tijd
+            <input type=time value="17:35" name=tijd>
+        </div>
+        <div>
+            Datum
+            <input type=date value="17:35" name=datum>
+        </div>
+        <div>
+            Kleur
+            <input type=color value="#ff0000" name=kleur>
+        </div>
+
+        <div>
+            Text area
+            <textarea name="textarea">sdfsf</textarea>
+        </div>
+
+        <div>
+            Keuzelijst
+            <select name=keuze>
+                <option value="1">Keuze 1</option>
+                <option value="2">Keuze 2</option>
+                <option value="3">Keuze 3</option>
+                <option value="4">Keuze 4</option>
+            </select>
+        </div>
+
+        <input type="reset">
+        <input type="submit">
+    </form>
+</div>
