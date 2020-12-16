@@ -53,6 +53,8 @@ namespace WebappMetHtmlFormsVorbeeld.Controllers
             {
                 case "badrequest":
                     return BadRequest();
+                case "accepted":
+                    return this.Accepted();
                 default:
                     return RedirectToAction("Index");
             }
