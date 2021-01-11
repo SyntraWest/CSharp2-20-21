@@ -9,10 +9,12 @@ namespace WerkenMetData.Controllers
 {
     public class RestaurantController : Controller
     {
-        public IActionResult Index()
-        {
 
-            var resto = new Restaurant
+        private Restaurant resto;
+
+        public RestaurantController()
+        {
+            resto = new Restaurant
             {
                 Naam = "T'hof van Cleve",
                 Kelners = new List<Kelner>
@@ -27,6 +29,11 @@ namespace WerkenMetData.Controllers
                     new Tafel { Tafelnummer = 3 },
                 },
             };
+        }
+
+        public IActionResult Index()
+        {
+            resto.Kelners.Add(new Kelner { Voornaam = "Pol"});
 
             return View(resto);
         }
