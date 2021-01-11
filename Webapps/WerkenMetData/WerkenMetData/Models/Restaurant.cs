@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,7 +9,7 @@ namespace WerkenMetData.Models
 
     public class Restaurant
     {
-        public Restaurant()
+        public Restaurant(IConfiguration config)
         {
             Tafels = new List<Tafel>();
             Kelners = new List<Kelner>();

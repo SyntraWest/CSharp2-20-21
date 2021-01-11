@@ -26,9 +26,9 @@ namespace WerkenMetData
             services.AddControllersWithViews();
 
             // singleton: er is maar 1 object tijdens de looptijd van de webapplicatie
-            services.AddSingleton(typeof(Restaurant));
-            //services.AddScoped();
-            //services.AddTransient();
+            //services.AddSingleton(typeof(Restaurant));
+            //services.AddScoped(typeof(Restaurant));
+            services.AddTransient(typeof(Restaurant));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
