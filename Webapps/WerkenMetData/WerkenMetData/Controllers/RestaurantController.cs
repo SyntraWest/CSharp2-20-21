@@ -10,28 +10,21 @@ namespace WerkenMetData.Controllers
     public class RestaurantController : Controller
     {
 
-        private static Restaurant resto = new Restaurant
-        {
-            Naam = "T'hof van Cleve",
-            Kelners = new List<Kelner>
-            {
-                new Kelner { Voornaam = "Jos" },
-                new Kelner { Voornaam = "Martine" }
-            },
-            Tafels = new List<Tafel>
-            {
-                new Tafel { Tafelnummer = 1 },
-                new Tafel { Tafelnummer = 2 },
-                new Tafel { Tafelnummer = 3 },
-            },
-        };
+        private Restaurant resto;
 
-        public RestaurantController()
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="resto">deze parameter wordt geleverd door Dependency Injection</param>
+        public RestaurantController(Restaurant resto)
         {
+            // het private field resto wordt geïnitialiseerd met de waarde geleverd door dependency injection
+            this.resto = resto;
         }
 
         public IActionResult Index()
         {
+            // aan het private field resto wordt nog een kelner toegevoegd.
             resto.Kelners.Add(new Kelner { Voornaam = "Pol"});
 
             return View(resto);

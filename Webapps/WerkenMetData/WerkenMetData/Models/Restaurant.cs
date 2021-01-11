@@ -8,6 +8,12 @@ namespace WerkenMetData.Models
 
     public class Restaurant
     {
+        public Restaurant()
+        {
+            Tafels = new List<Tafel>();
+            Kelners = new List<Kelner>();
+        }
+
         /// <summary>
         /// Naam van het restaurant
         /// </summary>
