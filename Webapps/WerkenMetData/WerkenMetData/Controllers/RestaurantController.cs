@@ -10,25 +10,24 @@ namespace WerkenMetData.Controllers
     public class RestaurantController : Controller
     {
 
-        private Restaurant resto;
+        private static Restaurant resto = new Restaurant
+        {
+            Naam = "T'hof van Cleve",
+            Kelners = new List<Kelner>
+            {
+                new Kelner { Voornaam = "Jos" },
+                new Kelner { Voornaam = "Martine" }
+            },
+            Tafels = new List<Tafel>
+            {
+                new Tafel { Tafelnummer = 1 },
+                new Tafel { Tafelnummer = 2 },
+                new Tafel { Tafelnummer = 3 },
+            },
+        };
 
         public RestaurantController()
         {
-            resto = new Restaurant
-            {
-                Naam = "T'hof van Cleve",
-                Kelners = new List<Kelner>
-                {
-                    new Kelner { Voornaam = "Jos" },
-                    new Kelner { Voornaam = "Martine" }
-                },
-                Tafels = new List<Tafel>
-                {
-                    new Tafel { Tafelnummer = 1 },
-                    new Tafel { Tafelnummer = 2 },
-                    new Tafel { Tafelnummer = 3 },
-                },
-            };
         }
 
         public IActionResult Index()
