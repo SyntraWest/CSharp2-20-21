@@ -146,7 +146,9 @@ namespace DelegatesVoorbeeld
 
             wedstrijd.Gefinisht += Wedstrijd_Gefinisht;
             wedstrijd.Opgegeven += Wedstrijd_Opgegeven;
+
             wedstrijd2.Gestart += Wedstrijd_Gestart;
+            
             wedstrijd2.Gefinisht += Wedstrijd_Gefinisht;
             wedstrijd2.Opgegeven += Wedstrijd_Opgegeven;
 
