@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace WerkenMetData.Models
 {
 
-    public class Restaurant
+    public class Restaurant : IRestaurant
     {
         public Restaurant(IConfiguration config)
         {

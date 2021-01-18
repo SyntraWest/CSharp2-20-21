@@ -28,7 +28,22 @@ namespace WerkenMetData
             // singleton: er is maar 1 object tijdens de looptijd van de webapplicatie
             //services.AddSingleton(typeof(Restaurant));
             //services.AddScoped(typeof(Restaurant));
-            services.AddTransient(typeof(Restaurant));
+            services.AddTransient<IRestaurant>(sp => new Restaurant(Configuration)
+            {
+                Naam = "Hof van Cleve",
+                Kelners = new List<Kelner>
+                {
+                    new Kelner{ Voornaam = "Pol"},
+                    new Kelner{ Voornaam = "Isabelle"},
+                },
+                Tafels = new List<Tafel>
+                {
+                    new Tafel
+                    {
+                        Tafelnummer = 444,
+                    }
+                }
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
