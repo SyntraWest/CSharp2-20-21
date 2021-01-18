@@ -80,7 +80,9 @@ namespace DelegatesVoorbeeld
 
     class Program
     {
-        static void Main(string[] args)
+
+        #region voorbeelden delegates
+        static void Main0(string[] args)
         {
             //new DelegateVoorbeeld().GebruikDelegate();
 
@@ -127,6 +129,70 @@ namespace DelegatesVoorbeeld
         {
             return "Methode 4 uitgevoerd";
         }
+
+        #endregion
+
+
+        #region voorbeeld events
+
+        static void Main(string[] args)
+        {
+            var wedstrijd = new Loopwedstrijd("Jean-Pierre");
+            var wedstrijd2 = new Loopwedstrijd("Astrid");
+
+            // hier 2 methodes aan hetzelfde event toegevoegd
+            wedstrijd.Gestart += Wedstrijd_Gestart;
+            wedstrijd.Gestart += Wedstrijd_Gestart2;
+
+            wedstrijd.Gefinisht += Wedstrijd_Gefinisht;
+            wedstrijd.Opgegeven += Wedstrijd_Opgegeven;
+            wedstrijd2.Gestart += Wedstrijd_Gestart;
+            wedstrijd2.Gefinisht += Wedstrijd_Gefinisht;
+            wedstrijd2.Opgegeven += Wedstrijd_Opgegeven;
+
+            wedstrijd2.Start();
+            wedstrijd.Start();
+            wedstrijd2.GeefOp();
+            wedstrijd.Finish();
+        }
+
+        private static void Wedstrijd_Opgegeven(object sender, EventArgs e)
+        {
+            if(sender is Loopwedstrijd wedstrijd)
+            {
+                Console.WriteLine($"{wedstrijd.Deelnemer} heeft opgegeven. De conditie moet nog een beetje opgekrikt worden...");
+            }
+
+            // hier blijft wedstrijg gedeclareerd
+        }
+
+        private static void Wedstrijd_Gefinisht(object sender, EventArgs e)
+        {
+            if (sender is Loopwedstrijd wedstrijd)
+            {
+                Console.WriteLine($"{wedstrijd.Deelnemer} heeft de eindmeet bereikt");
+            }
+        }
+
+        private static void Wedstrijd_Gestart(object sender, EventArgs e)
+        {
+            if (sender is Loopwedstrijd wedstrijd)
+            {
+                Console.WriteLine($"{wedstrijd.Deelnemer} is gestart");
+            }
+        }
+        private static void Wedstrijd_Gestart2(object sender, EventArgs e)
+        {
+            if (sender is Loopwedstrijd wedstrijd)
+            {
+                Console.WriteLine($"{wedstrijd.Deelnemer} is gestart (even ter herhaling)");
+            }
+        }
+
+        #endregion voorbeeld events
+
+
+
 
     }
 }
