@@ -86,9 +86,47 @@ namespace DelegatesVoorbeeld
 
             //new DelegateVoorbeeld().GebruikDelegateGeefStringTerug();
 
-            new DelegateVoorbeeld().GebruikDelegateAlsParameter(null, null, null, null);
+            //new DelegateVoorbeeld().GebruikDelegateAlsParameter(null, null, null, null);
+
+            // eerste manier om actie toe te kennen aan een delegate
+            // met de constructor van de delegate
+            DoeIets doeIets = new DoeIets(Methode1);
+            
+            // tweede manier om actie toe te kennen aan een delegate
+            // direct een methode toekennen aan een delegate
+            DoeIets2 doeIets2 = Methode2;
+
+            // derde manier
+            GeefStringTerug geefStringTerug = null;
+            geefStringTerug += new GeefStringTerug(Methode4);
+            geefStringTerug += Methode3;
+
+
+            new DelegateVoorbeeld().GebruikDelegateAlsParameter("parameter 1", doeIets, doeIets2, geefStringTerug);
 
             Console.ReadKey();
         }
+
+
+        static void Methode1()
+        {
+            Console.WriteLine("Methode 1 uitgevoerd");
+        }
+
+        static void Methode2(string s2, int i2, DateTime dt2)
+        {
+            Console.WriteLine($"Methode 2 opgeroepen met parameters {s2}, {i2} en {dt2}");
+        }
+
+        static string Methode3()
+        {
+            return "Methode 3 uitgevoerd";
+        }
+
+        static string Methode4()
+        {
+            return "Methode 4 uitgevoerd";
+        }
+
     }
 }
