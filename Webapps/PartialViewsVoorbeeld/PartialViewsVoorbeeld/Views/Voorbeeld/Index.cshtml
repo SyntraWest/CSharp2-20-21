@@ -1,6 +1,25 @@
 ﻿
-@{
+@model Models.VoorbeeldModel
+
+<h1>Voorbeeld in MVC</h1>
+
+<h2>@Model.Titel</h2>
+
+<partial name="PartialViewVoorbeeld01" />
+
+@{ 
+    Html.RenderPartial("PartialViewVoorbeeld01");
+}
+
+<h1>Werken met voorbeeldModel</h1>
+
+@foreach(var sub in Model.Submodellen)
+{
+    <partial name="SubmodelView" model="sub"/>
 }
 
 
-<h2>Voorbeeld in MVC</h2>
+<h2>Template van lijst van submodellen</h2>
+
+<partial name="SubmodelList" model="@Model.Submodellen" />
+

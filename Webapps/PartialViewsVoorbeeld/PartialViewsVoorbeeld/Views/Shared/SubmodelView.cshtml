@@ -1,0 +1,35 @@
+﻿@model PartialViewsVoorbeeld.Models.VoorbeeldSubmodel
+
+<h4>VoorbeeldSubmodel</h4>
+<p>Dit is een partial view met een @@model</p>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="View">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Tekst" class="control-label"></label>
+                <input asp-for="Tekst" class="form-control" />
+                <span asp-validation-for="Tekst" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Getal" class="control-label"></label>
+                <input asp-for="Getal" class="form-control" />
+                <span asp-validation-for="Getal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Datum" class="control-label"></label>
+                <input asp-for="Datum" class="form-control" />
+                <span asp-validation-for="Datum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

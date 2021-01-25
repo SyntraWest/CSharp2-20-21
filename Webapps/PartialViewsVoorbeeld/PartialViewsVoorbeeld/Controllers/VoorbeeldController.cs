@@ -8,9 +8,9 @@ namespace PartialViewsVoorbeeld.Controllers
 {
     public class VoorbeeldController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index([FromServices] Models.VoorbeeldModel model)
         {
-            return View();
+            return View(model);
         }
     }
 }

@@ -26,6 +26,39 @@ namespace PartialViewsVoorbeeld
             // TIP: Razor Pages en MVC tegelijk gebruiken in een app:
             services.AddControllersWithViews(); // EERST MVC
             services.AddRazorPages(); // DAN Pages
+
+            services.AddSingleton(sp => new Models.VoorbeeldModel
+            {
+                Titel = "Dit is een voorbeeldmodel",
+                Submodellen = new List<Models.VoorbeeldSubmodel>
+                {
+                    new Models.VoorbeeldSubmodel
+                    {
+                        Datum = DateTime.Now.AddDays(-1),
+                        Tekst = "Gisteren",
+                        Getal = 24,
+                    },
+                    new Models.VoorbeeldSubmodel
+                    {
+                        Datum = DateTime.Now.AddHours(-1),
+                        Tekst = "Een uur geleden",
+                        Getal = 1820,
+                    },
+                    new Models.VoorbeeldSubmodel
+                    {
+                        Datum = DateTime.Now.AddMinutes(-1),
+                        Tekst = "Een minuut geleden",
+                        Getal = 241,
+                    },
+                    new Models.VoorbeeldSubmodel
+                    {
+                        Datum = DateTime.Now,
+                        Tekst = "Nu",
+                        Getal = 24222,
+                    },
+                }
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,6 +90,6 @@ namespace PartialViewsVoorbeeld
                 endpoints.MapRazorPages(); // Dan Razor Pages
             });
 
-    }
+        }
     }
 }
