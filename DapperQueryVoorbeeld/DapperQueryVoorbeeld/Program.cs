@@ -33,6 +33,7 @@ SELECT 'acht' Alpha, 123 Beta, CURRENT_TIMESTAMP Gamma, 123.4/567.8 Delta
 
             using SqlConnection connection = new SqlConnection(connectionString);
 
+
             var resultaten = connection.Query<AlphaBeta, GammaDelta, AlphaBetaGammaDelta>(
                 sql,
                 (ab, gd) => new AlphaBetaGammaDelta
@@ -49,7 +50,7 @@ SELECT 'acht' Alpha, 123 Beta, CURRENT_TIMESTAMP Gamma, 123.4/567.8 Delta
                 splitOn: "Gamma");
 
 
-            foreach(AlphaBetaGammaDelta abgd in resultaten)
+            foreach (AlphaBetaGammaDelta abgd in resultaten)
             {
                 Console.WriteLine(@$"
 Resultaat:
@@ -59,8 +60,31 @@ Beta:  {abgd.Ab.Beta}
 Gamma: {abgd.Gd.Gamma}
 Delta: {abgd.Gd.Delta}
 ");
+
+
             }
 
         }
+
+
+        void VoegIetsToe(SqlConnection connection, AlphaBetaGammaDelta abgd)
+        {
+
+            string sql = @"
+insert into bla(kolomA, kolomB, kolomG, kolomD)
+values(@a, @b, @g, @d)";
+
+            connection.Execute(sql,
+                new
+                {
+                    a = abgd.Ab.Alpha,
+                    b = abgd.Ab.Beta,
+                    c = abgd.Gd.Gamma,
+                    d = abgd.Gd.Delta
+                });
+
+        }
+
     }
 }
+
